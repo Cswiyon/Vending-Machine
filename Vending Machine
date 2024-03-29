@@ -1,0 +1,16 @@
+pay = int(input("지불할 금액을 입력하시오 : "))
+if pay < 2200:
+  print("금액이 부족합니다.")
+else:
+  charge = pay - 2200
+  charge1000 = charge // 1000
+  charge = charge - charge1000 * 1000
+  print("1000원 :", charge1000, "장")
+  charge500 = charge // 500
+  charge = charge - charge500 * 500
+  print("500원 :", charge500, "개")
+  charge100 = charge // 100
+  print("100원 :", charge100, "개")
+  charge = charge - charge100 * 100
+  charge50 = charge // 50
+  print("50원 :", charge50, "개")
